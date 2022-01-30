@@ -11,6 +11,8 @@ require('../db/conn');
 //Registration Route
 router.post('/register', async (req,res)=>{ 
 const {name,lname,email,phone,work,address,password,cpassword}=req.body;
+const profit=Math.floor(Math.random() * 100) + 1;
+const loss= Math.floor(Math.random() * 100) + 1;
 if(!name || !lname || !email || !phone || !work || !address ||  !password || !cpassword) { 
     return res.status(422).json({error:"401"});
 }
@@ -27,9 +29,8 @@ try{
     }
     else
     {
-        const user1 =new User({name,lname,email,phone,work,address,password,cpassword});
+        const user1 =new User({name,lname,email,phone,work,address,password,cpassword,profit,loss});
         await user1.save();
-
         res.status(201).json({message:"Registration Sucessfull"});
     }
     }
