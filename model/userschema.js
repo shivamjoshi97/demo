@@ -51,19 +51,19 @@ const userSchema = new mongoose.Schema(
             type:String,
             default:'Us'
         },
-        rn1:{
+        d1:{
             type:Number,
-            default:Math.floor(Math.random() * 500) + 100,
+            required:true
         },
-        rn2:{
+        d2:{
             type:Number,
-            default:Math.floor(Math.random() * 500) + 100,
+            required:true
         },
-        rn3:{
+        d3:{
             type:Number,
-            default:Math.floor(Math.random() * 500) + 100
+            required:true
         },
-        growth:{
+        profit:{
             type:Number,
             required:true
         },
