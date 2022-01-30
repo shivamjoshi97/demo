@@ -41,15 +41,15 @@ const userSchema = new mongoose.Schema(
         },
         con1:{
             type:String,
-            default:'India',
+            default:'India'
         },
         con2:{
             type:String,
-            default:'Oman',
+            default:'Oman'
         },
         con3:{
             type:String,
-            default:'Us',
+            default:'Us'
         },
         rn1:{
             type:Number,
@@ -61,15 +61,15 @@ const userSchema = new mongoose.Schema(
         },
         rn3:{
             type:Number,
-            default:Math.floor(Math.random() * 500) + 100,
+            default:Math.floor(Math.random() * 500) + 100
         },
         growth:{
             type:Number,
-            default:Math.floor(Math.random() * 100) + 1,
+            default:Math.floor(Math.random() * 100) + 1
         },
         loss:{
             type:Number,
-            default:Math.floor(Math.random() * 100) + 1,
+            default:Math.floor(Math.random() * 100) + 1
         },
         tokens:[
             {
