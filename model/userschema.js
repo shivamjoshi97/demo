@@ -65,11 +65,11 @@ const userSchema = new mongoose.Schema(
         },
         growth:{
             type:Number,
-            default:Math.floor(Math.random() * 100) + 1
+            required:true
         },
         loss:{
             type:Number,
-            default:Math.floor(Math.random() * 100) + 1
+            required:true
         },
         tokens:[
             {
