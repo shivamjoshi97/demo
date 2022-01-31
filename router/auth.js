@@ -13,7 +13,6 @@ router.post('/register', async (req,res)=>{
 const {name,lname,email,phone,work,address,password,cpassword}=req.body;
 const profit=Math.floor(Math.random() * 100) + 1;
 const loss= Math.floor(Math.random() * 100) + 1;
-const profit=Math.floor(Math.random() * 100) + 1;
 const d1= Math.floor(Math.random() * 500) + 100;
 const d2=Math.floor(Math.random() * 500) + 100;
 const d3= Math.floor(Math.random() * 500) + 100;
